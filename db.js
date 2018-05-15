@@ -81,6 +81,11 @@ const Lecture = db.define('Lecture', {
         autoIncrement: true,
         primaryKey: true
     },
+	lectureName: {
+        type: Sequelize.STRING,
+        allowNull: false
+
+    }
 
     
 })

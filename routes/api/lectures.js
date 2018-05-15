@@ -9,6 +9,7 @@ const route = require('express').Router();
 
 route.post('/', (req, res) => {
     Lecture.create({
+        lectureName:req.body.lectureName,
         subjectId:req.body.subjectId,
         teacherId:req.body.teacherId,
         batchId:req.body.batchId

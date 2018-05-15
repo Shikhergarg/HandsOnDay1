@@ -19,5 +19,15 @@ route.post('/', (req, res) => {
         res.status(err)
     })
 })
-
+route.get('/', (req, res) => {
+    
+    Batch.findAll()
+    .then((batches) => {
+        
+            res.json(batches)
+        })
+    .catch((err)  => {
+        res.status(err)
+    } )
+})
 module.exports = route

@@ -8,6 +8,7 @@ const route = require('express').Router();
 
 
 route.post('/', (req, res) => {
+    //console.log("fun");
     StudentBatch.create({
         studentId:req.body.studentId,
         batchId:req.body.batchId
